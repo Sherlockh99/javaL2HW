@@ -1,0 +1,25 @@
+package lesson3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class TelephoneNumbers {
+    private HashMap<String, ArrayList> contacts = new HashMap<>();
+
+    public void addNumber(String fullName, int telNumber){
+        ArrayList telNumbers = contacts.getOrDefault(fullName,null);
+        if(telNumbers==null){
+            telNumbers = new ArrayList();
+        }
+        telNumbers.add(telNumber);
+        contacts.put(fullName,telNumbers);
+    }
+
+    public void getNumbers(String fullName){
+        ArrayList telNumbers = contacts.getOrDefault(fullName,null);
+        if(telNumbers!=null){
+            System.out.println(fullName + ": " + telNumbers);
+        }
+    }
+}
