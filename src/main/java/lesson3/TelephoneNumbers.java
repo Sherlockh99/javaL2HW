@@ -2,7 +2,6 @@ package lesson3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class TelephoneNumbers {
     private HashMap<String, ArrayList> contacts = new HashMap<>();
