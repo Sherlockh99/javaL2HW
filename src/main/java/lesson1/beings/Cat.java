@@ -1,7 +1,5 @@
 package lesson1.beings;
 
-import lesson1.beings.RunJumpable;
-
 public class Cat implements RunJumpable {
 
     private String name;
