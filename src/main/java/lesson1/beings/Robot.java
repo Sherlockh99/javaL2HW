@@ -1,6 +1,8 @@
-package lesson1;
+package lesson1.beings;
 
-public class Robot implements RunJumpable{
+import lesson1.beings.RunJumpable;
+
+public class Robot implements RunJumpable {
     private String name;
     private final double MAX_JUMP = 0.5;
     private final double MAX_RUN = 5500.0;

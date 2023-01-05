@@ -1,4 +1,6 @@
-package lesson1;
+package lesson1.sport;
+
+import lesson1.beings.RunJumpable;
 
 public class Wall implements Obstacle {
     private double sizeObstacle;

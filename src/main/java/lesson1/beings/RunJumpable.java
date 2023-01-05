@@ -1,4 +1,4 @@
-package lesson1;
+package lesson1.beings;
 
 public interface RunJumpable{
     boolean run(double dist);
