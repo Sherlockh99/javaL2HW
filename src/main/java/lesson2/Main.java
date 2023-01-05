@@ -1,7 +1,20 @@
 package lesson2;
 
-import java.io.IOException;
 import java.util.Arrays;
+
+/**
+ 1. Write a method that takes a two-dimensional string array of 4x4 size as input;
+ when an array of a different size is supplied,
+ you must throw a MyArraySizeException exception.
+
+ 2. Next, the method must go through all the elements of the array,
+ convert to int, and sum up. If the conversion fails in some element of the array,
+ an exception MyArrayDataException should be thrown, detailing which particular cell
+ contains incorrect data.
+
+ 3. In the main() method, call the received method, handle possible exceptions
+ MySizeArrayException and MyArrayDataException, and display the result of the calculation.
+ */
 
 public class Main {
 
@@ -28,12 +41,12 @@ public class Main {
 
     public static int Array4x4(String[][] arrays) throws MySizeArrayException, MyArrayDataException {
         if(arrays.length>4){
-            throw new MySizeArrayException("Неверно указан размер массива");
+            throw new MySizeArrayException("Invalid array size");
         }
 
         for (int i = 0; i <arrays.length; i++) {
             if(arrays[i].length>4){
-                throw new MySizeArrayException("Неверно указан размер массива");
+                throw new MySizeArrayException("Invalid array size");
             }
         }
 
@@ -43,7 +56,7 @@ public class Main {
                 try{
                     sum = sum + Integer.parseInt(arrays[i][j]);
                 }catch (NumberFormatException e){
-                    throw new MyArrayDataException("Некорректно указано число в ячейке [" + (i+1)+"]["+(j+1)+"]");
+                    throw new MyArrayDataException("Invalid cell number [" + (i+1)+"]["+(j+1)+"]");
                 }
             }
         }
