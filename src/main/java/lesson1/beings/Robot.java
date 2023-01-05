@@ -13,9 +13,9 @@ public class Robot implements RunJumpable {
     @Override
     public boolean run(double dist) {
         if(dist<=MAX_RUN){
-            System.out.printf("Робот %s смог пробежать %s м. \n",name,dist);
+            System.out.printf("The robot %s was able to run %s m. \n",name,dist);
         }else{
-            System.out.printf("Робот %s не смог пробежать %s м. \n",name,dist);
+            System.out.printf("The robot %s could not run %s m. \n",name,dist);
         }
         return dist<=MAX_RUN;
     }
@@ -23,9 +23,9 @@ public class Robot implements RunJumpable {
     @Override
     public boolean jump(double dist) {
         if(dist<=MAX_JUMP){
-            System.out.printf("Робот %s смог перепрыгнуть %s м. \n",name,dist);
+            System.out.printf("The robot %s was able to jump %s m. \n",name,dist);
         }else{
-            System.out.printf("Робот %s не смог перепрыгнуть %s м. \n",name,dist);
+            System.out.printf("The robot %s could not jump %s m. \n",name,dist);
         }
         return dist<=MAX_JUMP;
     }

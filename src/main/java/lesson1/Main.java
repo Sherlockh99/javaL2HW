@@ -26,9 +26,9 @@ public class Main {
     public static void main(String[] args) {
         RunJumpable[] runJumpables = new RunJumpable[3];
 
-        runJumpables[0] = new Cat("Мурзилка");
-        runJumpables[1] = new Man("Супермен");
-        runJumpables[2] = new Robot("Трансформер");
+        runJumpables[0] = new Cat("Murzilka");
+        runJumpables[1] = new Man("Batman");
+        runJumpables[2] = new Robot("Transformer");
 
         Obstacle[] obstacles = new Obstacle[3];
         obstacles[0] = new Treadmill(89);
