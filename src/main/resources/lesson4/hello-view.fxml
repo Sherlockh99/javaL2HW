@@ -5,10 +5,6 @@
 <?import javafx.scene.control.TextArea?>
 <GridPane fx:controller="lesson4.HelloController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-<!--    <stylesheets>-->
-<!--        <URL value="/src/main/css/style.css"/>-->
-<!--    </stylesheets>-->
-
     <TextField fx:id="textField" promptText="input text" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#clickBtnSendText"/>
     <Button text="Send text" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#clickBtnSendText"/>
     <TextArea fx:id="textArea" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="500"/>
